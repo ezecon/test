@@ -9,7 +9,7 @@ function ItemList() {
     }, []);
 
     const fetchItems = () => {
-        axios.get('http://localhost:5000/api/items')
+        axios.get('https://test-self-psi-99.vercel.app/api/items')
             .then(response => {
                 setItems(response.data);
             })

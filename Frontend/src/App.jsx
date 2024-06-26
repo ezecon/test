@@ -12,7 +12,7 @@ function App() {
     }, []);
 
     const fetchItems = () => {
-        axios.get('https://test-le495ji11-econs-projects.vercel.app/api/items')
+        axios.get('https://test-tau-rosy-58.vercel.app/api/items')
             .then(response => {
                 setItems(response.data);
             })

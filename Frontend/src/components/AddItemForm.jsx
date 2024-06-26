@@ -16,7 +16,7 @@ function AddItemForm({ fetchItems }) {
             price: price
         };
 
-        axios.post('http://localhost:5000/api/items', newItem)
+        axios.post('https://test-self-psi-99.vercel.app/api/items', newItem)
             .then(response => {
                 console.log('Item added:', response.data);
                 setName('');

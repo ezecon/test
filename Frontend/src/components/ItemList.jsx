@@ -9,7 +9,7 @@ function ItemList() {
     }, []);
 
     const fetchItems = () => {
-        axios.get('https://test-self-psi-99.vercel.app/api/items')
+        axios.get('https://test-le495ji11-econs-projects.vercel.app/api/items')
             .then(response => {
                 setItems(response.data);
             })

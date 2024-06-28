@@ -24,6 +24,7 @@ db.once('open', () => {
 // Import routes
 const itemsRouter = require('./routes/items');
 app.use('/api/items', itemsRouter);
+app.use('/',(req,res)=>{res.send("api working!")});
 
 // Start the server
 const PORT = process.env.PORT || 5000;
